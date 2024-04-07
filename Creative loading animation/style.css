@@ -5,7 +5,7 @@
 }
 
 body {
-	background-color: rgb(59, 59, 244);
+	background-color: #000;
 }
 
 .container {
@@ -22,7 +22,6 @@ body {
 }
 
 .loader .loading {
-	background: #fff;
 	border-radius: 50px;
 	height: 30px;
 	margin: 0 10px;
@@ -31,24 +30,51 @@ body {
 }
 
 .loader .loading.first {
-	animation-delay: 0.2s;
+	animation-delay: 0.1s;
+	background: red;
 }
 
 .loader .loading.second {
-	animation-delay: 0.4s;
+	animation-delay: 0.2s;
+	background: orange;
 }
 
 .loader .loading.third {
+	animation-delay: 0.3s;
+	background: #ffff00;
+}
+
+.loader .loading.fourth {
+	animation-delay: 0.4s;
+	background: green;
+}
+
+.loader .loading.fifth {
+	animation-delay: 0.5s;
+	background: blue;
+}
+
+.loader .loading.sixth {
 	animation-delay: 0.6s;
+	background: indigo;
+}
+
+.loader .loading.seventh {
+	animation-delay: 0.7s;
+	background: violet;
 }
 
 @keyframes load {
-	0% {
+	0%,
+	40%,
+	100% {
 		height: 30px;
 		width: 30px;
+		transform: scale(0.2);
 	}
-	50% {
-		height: 20px;
-		width: 20px;
+	20% {
+		height: 30px;
+		width: 30px;
+		transform: scale(1);
 	}
 }
