@@ -30,37 +30,37 @@ body {
 }
 
 .loader .loading.first {
-	animation-delay: 0.1s;
+	animation-delay: 0.15s;
 	background: red;
 }
 
 .loader .loading.second {
-	animation-delay: 0.2s;
+	animation-delay: 0.25s;
 	background: orange;
 }
 
 .loader .loading.third {
-	animation-delay: 0.3s;
+	animation-delay: 0.35s;
 	background: #ffff00;
 }
 
 .loader .loading.fourth {
-	animation-delay: 0.4s;
+	animation-delay: 0.45s;
 	background: green;
 }
 
 .loader .loading.fifth {
-	animation-delay: 0.5s;
+	animation-delay: 0.55s;
 	background: blue;
 }
 
 .loader .loading.sixth {
-	animation-delay: 0.6s;
+	animation-delay: 0.65s;
 	background: indigo;
 }
 
 .loader .loading.seventh {
-	animation-delay: 0.7s;
+	animation-delay: 0.75s;
 	background: violet;
 }
 
