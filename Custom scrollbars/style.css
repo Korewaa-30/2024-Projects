@@ -11,9 +11,19 @@ body {
 
 .card {
 	background: #ccc;
-	border-radius: 10px;
+	border-radius: 3px;
 	line-height: 28px;
 	margin: 20px;
 	padding: 15px;
 	width: 700px;
+}
+
+::-webkit-scrollbar {
+	background-color: transparent;
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(#21d4fd, #b721ff);
+	border-radius: 80px;
 }
