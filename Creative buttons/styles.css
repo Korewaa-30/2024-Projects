@@ -1,16 +1,21 @@
 .container {
-	background-color: rgb(110, 110, 95);
+	background-color: rgb(42, 42, 37);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 800px;
+	width: 100%;
 	height: 100vh;
 	position: relative;
 	text-align: center;
 	margin: 20px 30px;
+	font-family: sans-serif;
 }
 
-a {
+section {
+	margin-right: 10px;
+}
+
+.btn1 a {
 	text-decoration: none;
 	color: antiquewhite;
 	border: 2px solid antiquewhite;
@@ -21,7 +26,7 @@ a {
 	transition: all 1s;
 }
 
-a:before {
+.btn1 a:before {
 	content: "DOWNLOAD";
 	font-weight: bold;
 	color: #000;
@@ -39,7 +44,64 @@ a:before {
 	opacity: 0;
 }
 
-a:hover:before {
+.btn1 a:hover:before {
 	transform: translateY(0);
+	opacity: 1;
+}
+
+.btn2 a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: blueviolet;
+	border: 2px solid blueviolet;
+	border-radius: 5px;
+	padding: 32px 48px;
+	position: relative;
+	overflow: hidden;
+	transition: all 1s;
+}
+
+.btn2 a:before {
+	content: "button";
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 90%;
+	background: crimson;
+	transform: rotateX(270deg);
+	transform-origin: top;
+	transition: all 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+}
+
+.btn2 a:after {
+	content: "button";
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgb(76, 241, 76);
+	transform: rotateX(270deg);
+	transform-origin: top;
+	transition: all 0.5s;
+	transition-delay: 0.25s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+}
+
+.btn2 a:hover:before,
+.btn2 a:hover:after {
+	transform: rotateX(0);
 	opacity: 1;
 }
