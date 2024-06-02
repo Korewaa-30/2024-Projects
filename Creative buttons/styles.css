@@ -105,3 +105,60 @@ section {
 	transform: rotateX(0);
 	opacity: 1;
 }
+
+.btn3 a {
+	text-decoration: none;
+	text-transform: uppercase;
+	background: transparent;
+	color: aliceblue;
+	border: 2px solid aliceblue;
+	border-radius: 5px;
+	padding: 32px 48px;
+	letter-spacing: 2px;
+	position: relative;
+	transition: all 0.2s;
+	overflow: hidden;
+}
+
+.btn3 a:before,
+.btn3 a:after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	mix-blend-mode: multiply;
+	transition: all 0.2s;
+}
+
+.btn3 a:before {
+	background-color: #06c988a4;
+	left: -3px;
+	top: -3px;
+	transform-origin: top;
+	transform: perspective(1000px) rotateX(0);
+}
+
+.btn3 a:after {
+	background-color: #ffff00a6;
+	left: 3px;
+	top: 3px;
+	transform-origin: bottom;
+	transform: perspective(1000px) rotateX(0);
+}
+
+.btn3 a:hover:before {
+	top: -6px;
+	left: 0;
+	transform: perspective(1000px) rotateX(75deg);
+}
+
+.btn3 a:hover:after {
+	top: -6px;
+	left: 0;
+	transform: perspective(1000px) rotateX(-75deg);
+}
+
+.btn3 a:hover {
+	color: aqua;
+}
