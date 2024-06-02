@@ -1,18 +1,15 @@
 .container {
 	background-color: rgb(42, 42, 37);
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	width: 100%;
 	height: 100vh;
 	position: relative;
 	text-align: center;
-	margin: 20px 30px;
+	margin: 20px auto;
 	font-family: sans-serif;
-}
-
-section {
-	margin-right: 20px;
 }
 
 .btn1 a {
@@ -20,7 +17,7 @@ section {
 	color: antiquewhite;
 	border: 2px solid antiquewhite;
 	border-radius: 5px;
-	padding: 32px 80px;
+	padding: 32px 64px;
 	position: relative;
 	overflow: hidden;
 	transition: all 1s;
@@ -113,7 +110,7 @@ section {
 	color: aliceblue;
 	border: 2px solid aliceblue;
 	border-radius: 5px;
-	padding: 32px 48px;
+	padding: 32px 64px;
 	letter-spacing: 2px;
 	position: relative;
 	transition: all 0.2s;
@@ -166,7 +163,7 @@ section {
 .btn4 {
 	border: none;
 	background-color: rgba(17, 17, 137, 0.824);
-	padding: 16px 64px;
+	padding: 16px 48px;
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 22px;
@@ -204,4 +201,45 @@ section {
 	border-bottom: 4px solid darkblue;
 	border-right: 4px solid darkblue;
 	transition: all 0.25s;
+}
+
+.btn5 a {
+	text-decoration: none;
+	text-transform: uppercase;
+	background: #fff;
+	color: red;
+	border-radius: 100px;
+	padding: 16px 64px;
+	position: absolute;
+	transition: all 0.2s;
+	font-size: 24px;
+}
+
+.btn5 a:before,
+.btn5 a:after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-radius: 100px;
+	left: 0;
+	top: 0;
+	background: #fff;
+	z-index: -1;
+	transition: all 1s;
+}
+
+.btn5 a:hover:before {
+	transform: scaleX(1.4) scaleY(1.6);
+	opacity: 0;
+}
+
+.btn5 a:hover {
+	transform: translateX(-3px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn5 a:active {
+	transform: translateY(-1px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
