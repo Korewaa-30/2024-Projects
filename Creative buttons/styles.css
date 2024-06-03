@@ -211,7 +211,7 @@
 .btn5 a {
 	text-decoration: none;
 	text-transform: uppercase;
-	background: #ddedf4;
+	background: #9adbf7;
 	color: red;
 	border-radius: 100px;
 	padding: 16px 64px;
@@ -229,7 +229,7 @@
 	border-radius: 100px;
 	left: 0;
 	top: 0;
-	background: #ddedf4;
+	background: #9adbf7;
 	z-index: -1;
 	transition: all 1s;
 }
