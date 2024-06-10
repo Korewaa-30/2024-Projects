@@ -6,11 +6,13 @@
 
 .container {
 	height: 100vh;
-	display: flex;
+	display: relative;
 	align-items: center;
 	justify-content: center;
 	font-family: sans-serif;
 	background-color: #000;
+	padding-top: 30px;
+	padding-left: 30px;
 }
 
 .row {
@@ -29,7 +31,7 @@ li {
 	list-style: none;
 }
 
-a {
+.menu1 {
 	text-decoration: none;
 	font-size: 22px;
 	padding: 16px 32px;
@@ -37,7 +39,7 @@ a {
 	color: #fff;
 }
 
-a:before {
+.menu1:before {
 	content: "";
 	position: absolute;
 	background: #fff;
@@ -50,12 +52,12 @@ a:before {
 	transform-origin: left;
 }
 
-a:hover:before,
-a:hover:after {
+.menu1:hover:before,
+.menu1:hover:after {
 	transform: scaleX(1);
 }
 
-a:after {
+.menu1:after {
 	content: "";
 	position: absolute;
 	background: #fff;
@@ -66,4 +68,60 @@ a:after {
 	transform: scaleX(0);
 	transition: all 1s;
 	transform-origin: right;
+}
+
+.menu2 {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+	padding: 15px 30px;
+	position: relative;
+	display: block;
+	color: #17ec17;
+	transition: 1s;
+	z-index: 2;
+}
+
+.menu2:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transform: scaleY(2);
+	transition: 1s;
+	border-top: 2px solid crimson;
+	border-bottom: 2px solid crimson;
+	z-index: -1;
+}
+
+.menu2:hover:before {
+	transform: scaleY(1.2);
+	opacity: 1;
+}
+
+.menu2:after {
+	content: "";
+	position: absolute;
+	background-color: crimson;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transform: scale(0);
+	transition: 1s;
+	z-index: -2;
+	/*border-top: 2px solid crimson;
+	border-bottom: 2px solid crimson;*/
+}
+
+.menu2:hover:after {
+	transform: scale(1);
+}
+
+.menu2:hover {
+	color: #fff;
 }
