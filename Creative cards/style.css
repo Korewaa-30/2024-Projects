@@ -1,0 +1,57 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+	background-color: rgb(10, 10, 10);
+	height: 100vh;
+}
+
+p {
+	line-height: 25px;
+	margin: 20px;
+	padding: 20px 0;
+}
+
+a {
+	background: rgb(22, 7, 35);
+	color: #fff;
+	font-size: 12px;
+	padding: 0.6rem, 1rem;
+	text-decoration: none;
+}
+
+.text-container {
+	background-color: #fff;
+	position: relative;
+	padding: 40px;
+	width: 320px;
+	overflow: hidden;
+}
+
+.text-container:before {
+	content: "";
+	position: absolute;
+	background-color: blueviolet;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	bottom: calc(-100% + 5px);
+	transition: 1s;
+}
+
+.text-container:hover:before {
+	bottom: 0;
+}
+
+.content {
+	position: relative;
+	z-index: 2;
+	color: #000;
+	transition: 1s;
+}
+
+.text-container:hover .content {
+	color: #fff;
+}
