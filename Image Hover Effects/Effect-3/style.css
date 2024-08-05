@@ -1,0 +1,14 @@
+body {
+	align-items: center;
+	display: flex;
+	font-family: sans-serif;
+	height: 100vh;
+	justify-content: center;
+}
+
+.container {
+	height: 30rem;
+	width: 30rem;
+	position: relative;
+	overflow: hidden;
+}
