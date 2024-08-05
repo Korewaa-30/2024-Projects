@@ -1,0 +1,43 @@
+body {
+	align-items: center;
+	display: flex;
+	font-family: sans-serif;
+	height: 100vh;
+	justify-content: center;
+}
+
+.container {
+	height: 30rem;
+	width: 30rem;
+	position: relative;
+	overflow: hidden;
+}
+
+img {
+	width: 100%;
+	transition: all 1s;
+}
+
+.content {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 72%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	transition: all 1s;
+	background-color: rgb(23, 23, 23);
+	transform: translateX(-100%);
+}
+
+.container:hover .content {
+	transform: translateX(0);
+}
+
+.container:hover img {
+	transform: translateX(100%);
+}
